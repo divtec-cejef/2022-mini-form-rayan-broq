@@ -16,6 +16,14 @@ body {
     margin: 2rem auto;
 }
 
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 2px #2B2D42;
+    opacity: 80%;
+}
+
 a {
     color: #EF233C;
     text-decoration: none;
@@ -43,4 +51,81 @@ button[type="reset"] {
     color: #2B2D42;
 }
 
+/************ Formulaire **************/
 
+form {
+    background-color: rgba(255, 255, 255, 8);
+    margin: 2em auto 80px;
+    border: 6px solid #2B2D42;
+    max-width: 450px;
+    min-width: 300px;
+    padding: 20px;
+}
+
+form ul {
+    padding: 0;
+    margin: 0;
+}
+
+form li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+form li:last-child {
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+    display:block;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+label input + span {
+    font-weight: normal;
+}
+
+label input:checked + span {
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid #2B2D42;
+    background-color: white;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.inputGenre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+fieldset {
+    border: 2px solid #2B2D42;
+    padding: 1em;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 .25em
+}
+
+button[type="submit"] {
+    margin-right: 1em;
+}
+
+button[type="submit"] + a {
+    color: #2B2D42;
+}
+
+button[type="submit"] + a:hover {
+    text-decoration: underline;
+}
